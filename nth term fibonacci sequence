@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	double phi = 1.618034;
+	double fibo;
+	
+	cout << "enter fibonacci number: ";
+	cin >> fibo;
+	
+	double fnum = (pow(phi, fibo) - pow(1 - phi, fibo)) / sqrt(5);
+	
+	cout << fnum;
+}
